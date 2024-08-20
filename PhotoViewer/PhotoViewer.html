@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Photo Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div id = main_body>
+        <h1 class = head>
+            Photo Viewer
+        </h1>
+            
+        <img src="InitialImage.jpg" alt="initial image" id = "photos" onclick="next()">
+
+        <div id = status>
+            <fieldset id = "statusfield">
+                <legend class = "leg">Status</legend>
+                <label>Photo Being Displayed: <input class = "longtext" disabled id="display" type="text" value="InitialImage.jpg"></label>
+                <div id = "pg"></div>
+            </fieldset>
+
+            <fieldset>
+                <legend class = "leg">Loading Images (Local Folder)</legend>
+                <label>Photos' Folder: <input id="folder" type="text"></label>
+                <label>Common Name: <input id="commonName" type="text"></label>
+                <br>
+                <label>Start Photo Number: <input id="startPhoto" type="text"></label>
+                <label>End Photo Number: <input id="endPhoto" type="text"></label>
+                <br>
+                <input class = "btn" type="button" value="Load Photos" onclick="loadPhotos()"/>
+            </fieldset>
+            <script src="code.js"></script>
+
+            <fieldset>
+                <legend class = "leg">Loading Images (JSON File)</legend>
+                <label>URL: <input class = "longtext" id="jsonURL" type="text"></label>
+                <input class = "btn" type="button" value="Load JSON" onclick="loadJSON()"/>
+            </fieldset>
+
+            <fieldset>
+                <legend class = "leg">Iterating</legend>
+                <input class = "btn" type="button" value="Previous Photo" onclick="previous()"/>
+                <input class = "btn" type="button" value="Next Photo" onclick="next()"/>
+                <input class = "btn" type="button" value="First Photo" onclick="first()"/>
+                <input class = "btn" type="button" value="Last Photo" onclick="last()"/>
+            </fieldset>
+
+            <fieldset>
+                <legend class = "leg">Slideshows</legend>
+                <input class = "btn" type="button" value="SlideShow" onclick="SS()"/>
+                <input class = "btn" type="button" value="RandomSlideShow" onclick="randomSS()"/>
+                <input class = "btn" type="button" value="StopSlideShow" onclick="stopSS()"/>
+            </fieldset>
+            <input class = "btn" type="reset" value="ResetFormValues" onclick="reset()"/>
+
+       </div>
+    </div>
+</body>

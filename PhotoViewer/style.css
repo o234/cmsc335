@@ -1,0 +1,46 @@
+#main_body{
+    border-style: groove;
+    
+    border-width: 1rem;
+    border-color:brown;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+.head{
+    text-decoration: underline;
+    font-weight: bold;
+    color:brown;
+    margin-left: 2rem;
+}
+
+#photos{
+    max-width: 50%;
+    height: auto;
+    width: auto;
+    margin-left: 15rem;
+    border-style: double;
+    border-color: black;
+    border-width: 0.5rem;
+}
+
+#status{
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+
+.leg{
+    font-weight: bold;
+}
+
+.longtext{
+    width: 42rem;
+}
+
+#pg {
+    color:red;
+}
+
+.btn {
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
